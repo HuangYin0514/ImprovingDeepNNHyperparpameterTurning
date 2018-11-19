@@ -6,7 +6,7 @@
 import numpy as np
 
 
-def linear_backward(dZ, cache):
+def linear_backward_with_Regularization(dZ, cache, lambd):
     """
         Implement the linear portion of backward propagation for a single layer (layer l)
 
@@ -22,8 +22,8 @@ def linear_backward(dZ, cache):
     A_prev, W, b = cache
     m = A_prev.shape[1]
 
-    dW = np.dot(dZ, A_prev.T) / m
-    db = np.sum(dZ, axis=1, keepdims=True)/ m
+    dW = np.dot(dZ, A_prev.T) / m + (lambd / m * W)
+    db = np.sum(dZ, axis=1, keepdims=True) / m
     dA_prev = np.dot(W.T, dZ)
     # 写法疑问
     # np.squeeze(np.sum(dZ, axis=1, keepdims=True)/ m)

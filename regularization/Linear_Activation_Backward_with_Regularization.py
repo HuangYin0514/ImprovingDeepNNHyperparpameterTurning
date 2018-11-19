@@ -5,10 +5,10 @@
 # @Software : PyCharm
 from Relu_Backward import relu_backward
 from Sigmoid_Backward import sigmoid_backward
-from Linear_Backward import linear_backward
+from Linear_Backward_with_Regularization import linear_backward_with_Regularization
 
 
-def linear_activation_backward(dA, cache, activation):
+def linear_activation_backward_with_Regularization(dA, cache, activation,lambd):
     """
         Implement the backward propagation for the LINEAR->ACTIVATION layer.
 
@@ -25,10 +25,10 @@ def linear_activation_backward(dA, cache, activation):
     linear_cacahe, activation_cache = cache
     if activation == "relu":
         dZ = relu_backward(dA, activation_cache)
-        dA_prev, dW, db = linear_backward(dZ, linear_cacahe)
+        dA_prev, dW, db = linear_backward_with_Regularization(dZ, linear_cacahe,lambd)
     elif activation == "sigmoid":
         dZ = sigmoid_backward(dA, activation_cache)
-        dA_prev, dW, db = linear_backward(dZ, linear_cacahe)
+        dA_prev, dW, db = linear_backward_with_Regularization(dZ, linear_cacahe,lambd)
 
     assert (dA_prev.shape[1] == dA.shape[1])
 

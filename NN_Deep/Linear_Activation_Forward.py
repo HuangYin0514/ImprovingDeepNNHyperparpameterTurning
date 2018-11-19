@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2018/11/2 21:53
 # @Author   : HuangYin
-# @FileName : Linear_Activation_Forward.py
+# @FileName : Linear_Activation_Forward_with_Regularization.py
 # @Software : PyCharm
 from Linear_Forward import linear_forward
 from Sigmoid import sigmoid

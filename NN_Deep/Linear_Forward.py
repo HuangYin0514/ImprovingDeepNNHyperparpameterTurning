@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2018/11/2 21:35
 # @Author   : HuangYin
-# @FileName : Linear_Forward.py
+# @FileName : Linear_Forward_with_Regularization.py
 # @Software : PyCharm
 import numpy as np
 
