@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/NN_Deep" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/regularization" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GradientCheck" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/optimization" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (pythonvenv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
