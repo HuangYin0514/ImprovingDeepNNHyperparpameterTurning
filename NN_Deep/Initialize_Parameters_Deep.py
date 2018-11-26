@@ -16,7 +16,7 @@ def initialize_parameters_deep(layer_dims):
                        Wl -- weight matrix of shape (layer_dims[l], layer_dims[l-1])
                        bl -- bias vector of shape (layer_dims[l], 1)
        """
-    np.random.seed(1)
+    np.random.seed(3)
     L = len(layer_dims)
     parameters = {}
 
